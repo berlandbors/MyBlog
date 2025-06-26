@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>📚 Архив: Книги и Изображения</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>📚 Архив Internet Archive</h1>
+  <select id="mode">
+    <option value="texts">Книги и документы</option>
+    <option value="image">Изображения и фото</option>
+  </select>
+  <input id="query" placeholder="Введите тему, жанр или ключевое слово">
+  <button onclick="search()">🔍 Искать</button>
+
+  <div id="results"></div>
+
+  <div id="modal">
+    <div id="modal-content">
+      <img id="modal-img" src="" alt="">
+      <iframe id="modal-frame" style="display:none"></iframe>
+      <div id="gallery-counter"></div>
+      <div>
+        <button onclick="prevImage()">⏮</button>
+        <button onclick="nextImage()">⏭</button>
+        <button onclick="closeModal()">❌ Закрыть</button>
+        <button onclick="shareItem()">🔗 Поделиться</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
