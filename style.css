@@ -1,0 +1,71 @@
+body {
+  background: #111;
+  color: #eee;
+  font-family: sans-serif;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+input, button, select {
+  padding: 10px;
+  margin: 5px 0;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.result {
+  background: #222;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.result:hover {
+  background: #333;
+}
+.result img {
+  max-height: 200px;
+  width: auto;
+  margin-top: 10px;
+  display: block;
+}
+#modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+#modal-content {
+  background: #222;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 95vw;
+}
+#modal-img {
+  max-width: 90vw;
+  max-height: 70vh;
+}
+#modal-frame {
+  width: 90vw;
+  height: 80vh;
+  border: none;
+}
+#gallery-counter {
+  margin: 10px;
+  font-size: 14px;
+  color: #ccc;
+}
+button {
+  background: #444;
+  color: #fff;
+  border: none;
+  margin: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background: #666;
+}
